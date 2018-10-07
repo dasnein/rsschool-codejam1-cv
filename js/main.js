@@ -3,26 +3,9 @@
 	//	Плавная прокрутка
 	$('.parallax').on('click', function(event) {
 		event.preventDefault();
-		$('html, body').animate({scrollTop: ($($(this).attr('href')).eq(0).offset().top)-$('header').height()}, 500);
+		$('html, body').animate({scrollTop: ($($(this).attr('href')).eq(0).offset().top)/*-$('header').height()*/}, 500);
 	});
 
-
-
-
-	var slider_scheme = $('#slider-scheme');
-		slider_scheme.owlCarousel({
-			loop: true,
-			items: 1,
-			autoplay: false,
-			autoplayTimeout: 5000,
-			center: true,
-			margin: 30,
-			// navContainer: ".slider-scheme-controls",
-			nav: true,
-			navText: ["предыдущий этап", "следующий этап"],
-			navElement: "a",
-			dots: true
-		});
 
 
 
@@ -149,47 +132,6 @@
 				xhr.send(formData);
 			}
 		});
-
-
-
-	//	Добавляем карту
-		var map_coords = [55.671868, 37.582875];
-		var map_center = [55.671868, 37.582875];
-
-		ymaps.ready(init);
-		var myMap, 
-			myPlacemark;
-
-		function init(){ 
-			myMap = new ymaps.Map("map", {
-				center: map_center,
-				zoom: 16
-			}); 
-			
-			myPlacemark = new ymaps.Placemark(map_coords, 
-			{
-				hintContent: 'ТЦ «Декор Экспо», вход 2, павильон М-13,14',
-				balloonContent: 'Москва, Нахимовский пр-т, 24Б ТЦ «Декор Экспо», вход 2, павильон М-13,14',
-				iconContent: 'Вход 2'
-			},
-			{
-				//	Отметка в виде точки
-				// preset: 'islands#redDotIcon'
-
-				//	Отметка с текстом
-				// preset: 'islands#redStretchyIcon'
-
-				//	Отметка картинкой
-				iconLayout: 'default#image',
-				iconImageHref: 'img/map-pin.png',
-				iconImageSize: [40, 58],
-				iconImageOffset: [-5, -54]
-			});
-			
-			myMap.geoObjects.add(myPlacemark);
-
-			myMap.behaviors.disable('scrollZoom'); //	Отключаем Zoom
-		}
 
 
 
