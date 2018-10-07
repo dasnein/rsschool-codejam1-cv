@@ -41,3 +41,27 @@
     margin-top: 40px;
   }
 }
+
+.b-2 {
+  background-color: #ffda00;
+
+  .container {
+    padding: 50px $padding;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .photo {
+    display: block;
+    margin-left: 40px;
+  }
+
+  p {
+    color: #181a1f;
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4em;
+  }
+}

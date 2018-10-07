@@ -212,4 +212,27 @@ form button.load {
       background: #ffdb00;
       color: #000000; }
 
+.b-2 {
+  background-color: #ffda00; }
+  .b-2 .container {
+    padding: 50px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .b-2 .photo {
+    display: block;
+    margin-left: 40px; }
+  .b-2 p {
+    color: #181a1f;
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4em; }
+
 /*# sourceMappingURL=style.css.map */
