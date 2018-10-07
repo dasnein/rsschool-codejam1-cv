@@ -1,7 +1,5 @@
 @import "modules/reset";
 
-@import "modules/fonts";
-
 @import "modules/common";
 
 
@@ -11,3 +9,35 @@
 
 
 @import "modal";
+
+.b-1 {
+  background-color: #17191e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  h1 {
+    color: #ffdb00;
+    font-family: Abel;
+    font-size: 154px;
+    font-weight: 400;
+    line-height: 1em;
+  }
+
+  p {
+    color: #fff;
+    font-family: Abel;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8em;
+    margin-top: 1em;
+    padding-right: 20%;
+  }
+
+  .parallax {
+    @include btn(203, 63);
+    float: left;
+    margin-top: 40px;
+  }
+}

@@ -83,24 +83,6 @@ input {
   border: none; }
 
 /*	DASNEIN STYLE RESET END*/
-@font-face {
-  font-family: 'ProximaNova';
-  src: local("ProximaNova"), url("../fonts/ProximaNova-Regular.otf");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'ProximaNova';
-  src: local("ProximaNova"), url("../fonts/ProximaNova-Semibold.otf");
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'ProximaNova';
-  src: local("ProximaNova"), url("../fonts/ProximaNova-Extrabold.otf");
-  font-weight: 900;
-  font-style: normal; }
-
 /*
 html {
 	overflow-y: scroll !important;
@@ -113,23 +95,20 @@ html {
 
 body > div {
   width: 100%;
-  min-width: 1200px; }
+  min-width: 1024px; }
 
 .container {
-  width: 1200px;
+  width: 1024px;
   height: auto;
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0px auto;
   position: relative;
-  padding: 0px 20px; }
+  padding: 0px 15px; }
 
 .hidden {
   display: none; }
-
-.input_error {
-  border: 2px solid red !important; }
 
 /*
 *  STYLES
@@ -183,5 +162,54 @@ form button.load {
     transition: all linear 0.2s; }
   form button.load:hover {
     cursor: default; }
+
+.b-1 {
+  background-color: #17191e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh; }
+  .b-1 h1 {
+    color: #ffdb00;
+    font-family: Abel;
+    font-size: 154px;
+    font-weight: 400;
+    line-height: 1em; }
+  .b-1 p {
+    color: #fff;
+    font-family: Abel;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8em;
+    margin-top: 1em;
+    padding-right: 20%; }
+  .b-1 .parallax {
+    display: block;
+    float: none;
+    padding: 1.5em 0;
+    margin: 0 auto;
+    width: 203px;
+    border-radius: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Abel', sans-serif;
+    color: #fff;
+    border: 2px solid #ffdb00;
+    -webkit-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+    float: left;
+    margin-top: 40px; }
+    .b-1 .parallax:hover {
+      cursor: pointer;
+      text-decoration: none;
+      background: #ffdb00;
+      color: #000000; }
 
 /*# sourceMappingURL=style.css.map */

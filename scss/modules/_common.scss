@@ -9,8 +9,8 @@ html {
 	box-sizing: border-box;
 }
 
-$container: 1200px;
-$padding: 20px;
+$container: 1024px;
+$padding: 15px;
 
 body > div {
 	width: 100%;
@@ -31,9 +31,9 @@ body > div {
 	display: none;
 }
 
-.input_error {
-	border: 2px solid red !important;
-}
+// .input_error {
+// 	border: 2px solid red !important;
+// }
 
 @mixin anim($duration:0.2s, $property:all) {
 	-webkit-transition: $property linear $duration;
@@ -49,30 +49,27 @@ body > div {
 	transition: $property ease $duration;
 }
 
-@mixin btn($width, $height, $f_size:30px) {
-	display: block;
-	padding: 0px;
-	border: none;
-	margin: 0px auto;
-	width: $width;
-	height: $height;
-	line-height: $height;
-	background-image: url(../img/button-green-bg.png), url(../img/button-green-bg-hover.png);
-	background-repeat: repeat-x;
-	background-size: auto 100%;
-	background-position: top center;
-	border-radius: 32px;
+@mixin btn($width, $height, $f_size:18) {
+  display: block;
+  float: none;
+	padding: 1.5em 0;
+	margin: 0 auto;
+	width: $width * 1px;
+	// height: $height * 1px;
+	// line-height: $height * 1px;
+	border-radius: 45px;
 	text-align: center;
-	font-size: $f_size;
-	font-weight: 900;
-	font-family: ProximaNova;
-	color: #fff;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.73);
-	box-shadow: 0px 5px 0px #097000, 0px 10px 0px rgba(0,0,0,0.5);
+	font-size: $f_size * 1px;
+	font-weight: 400;
+	font-family: 'Abel', sans-serif;
+  color: #fff;
+  border: 2px solid #ffdb00;
+  @include anim();
 	
 	&:hover {
 		cursor: pointer;
-		text-decoration: none;
-		background-image: url(../img/button-green-bg-hover.png);
+    text-decoration: none;
+    background: #ffdb00;
+    color: #000000;
 	}
 }

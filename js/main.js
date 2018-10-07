@@ -1,4 +1,4 @@
-$(document).ready(function() {
+  $(document).ready(function() {
 
 	//	Плавная прокрутка
 	$('.parallax').on('click', function(event) {
