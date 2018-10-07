@@ -351,5 +351,63 @@ form button.load {
     font-family: Abel;
     font-size: 44px;
     font-weight: 400; }
+  .b-5 .portfolio {
+    margin-top: 30px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .b-5 .portfolio li {
+      margin: 20px 0px;
+      width: 300px;
+      height: 160px;
+      overflow: hidden;
+      position: relative; }
+      .b-5 .portfolio li a {
+        display: block;
+        width: 300px;
+        height: 160px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% auto;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        -webkit-transition: all linear 0.2s;
+        transition: all linear 0.2s; }
+        .b-5 .portfolio li a:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          background: rgba(0, 0, 0, 0.5);
+          opacity: 0;
+          -webkit-transition: all linear 0.2s;
+          transition: all linear 0.2s; }
+        .b-5 .portfolio li a:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          display: block;
+          width: 64px;
+          height: 64px;
+          background: rgba(255, 255, 255, 0.6) url(../img/b-5__website.svg) no-repeat center center/contain;
+          margin-top: -32px;
+          margin-left: -32px;
+          border-radius: 100%;
+          opacity: 0;
+          -webkit-transition: all linear 0.2s;
+          transition: all linear 0.2s; }
+      .b-5 .portfolio li:hover a {
+        border-color: #000000;
+        background-size: 120% auto; }
+        .b-5 .portfolio li:hover a:before, .b-5 .portfolio li:hover a:after {
+          opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */

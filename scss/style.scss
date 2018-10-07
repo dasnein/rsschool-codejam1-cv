@@ -199,5 +199,74 @@
     font-weight: 400;
   }
 
-  .portfolio {}
+  .portfolio {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    li {
+      margin: 20px 0px;
+      width: 300px;
+      height: 160px;
+      overflow: hidden;
+      position: relative;
+
+      a {
+        display: block;
+        width: 300px;
+        height: 160px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        // background-size: cover;
+        background-size: 100% auto;
+        border: 1px solid rgba(0,0,0,0.1);
+        @include anim();
+
+          &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background: rgba(0,0,0,0.5);
+            opacity: 0;
+            @include anim();
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            width: 64px;
+            height: 64px;
+            background: rgba(255,255,255,0.6) url(../img/b-5__website.svg) no-repeat center center / contain;
+            margin-top: -32px;
+            margin-left: -32px;
+            border-radius: 100%;
+            opacity: 0;
+            @include anim();
+          }
+      }
+
+      &:hover {
+        
+        a {
+          // transform: scale(1.2);
+          border-color: #000000;
+          background-size: 120% auto;
+
+          &:before,
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
 }
