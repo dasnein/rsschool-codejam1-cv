@@ -69,53 +69,95 @@
       <ul class="examples">
         <li>
           <p>
-            Your task is to implement getZerosCount function, which takes any integer number number (1 <= number <=10^8) as
-              only argument. You should calculate how many zeros in the end of result number, which is factorial of number </p>
-              <pre><code class="language-js">
-                    function getZerosCount(number) {
-                      let result = 0,
-                      n = 5,
-                      m = n;
-                      
-                      while (true) {
-                        let x = Math.floor(number / m);
-                        
-                        if (x == 0) {
-                          return result;
-                        } else {
-                          result += x;
-                          m *= n;
-                        }
-                        
-                      }
-                    }
-                  </code></pre>
+            Your task is to implement getZerosCount function, which takes any integer number number (1 <= number <=10^8) as only argument. You should calculate how many zeros in the end of result number, which is factorial of number 
+          </p>
+          <pre>
+            <code class="language-js">
+function getZerosCount(number) {
+  let result = 0,
+  n = 5,
+  m = n;
+  
+  while (true) {
+    let x = Math.floor(number / m);
+    
+    if (x == 0) {
+      return result;
+    } else {
+      result += x;
+      m *= n;
+    }
+    
+  }
+}
+              </code>
+            </pre>
         </li>
         <li>
           <p>
-            Your task is to implement getZerosCount function, which takes any integer number number (1 <= number <=10^8) as
-              only argument. You should calculate how many zeros in the end of result number, which is factorial of number </p>
-              <pre>
-                <code class="language-js">
-                    function getZerosCount(number) {
-                      let result = 0,
-                      n = 5,
-                      m = n;
-                      
-                      while (true) {
-                        let x = Math.floor(number / m);
-                        
-                        if (x == 0) {
-                          return result;
-                        } else {
-                          result += x;
-                          m *= n;
-                        }
-                        
-                      }
-                    }
-                  </code>
-                </pre>
+            Your task is to implement class SmartCalculator. All methods in class should be chainable. The priority of different operations should be kept in mind. It means, that 2 + 2 * 2 is 6, not 8.
+          </p>
+          <pre>
+            <code class="language-js">
+class SmartCalculator {
+  constructor(initialValue) {
+    this.v = initialValue;
+    this.lastNum = initialValue;
+    this.lastPow = 1;
+  }
+
+  toString() {    
+    return eval(this.v);
+  }
+
+  add(number) {
+    this.v += '+' + number;
+    this.lastNum = number;
+    this.lastPow = 1;
+    return this;
+  }
+  
+  subtract(number) {
+    this.v += '-' + number;
+    this.lastNum = number;
+    this.lastPow = 1;
+    return this;
+  }
+
+  multiply(number) {
+    this.v += '*' + number;
+    this.lastNum = number;
+    this.lastPow = 1;
+    return this;
+  }
+
+  devide(number) {
+    this.v += '/' + number;
+    this.lastNum = number;
+    this.lastPow = 1;
+    return this;
+  }
+
+  pow(number) {
+
+    let new_last_num = this.lastNum;
+
+    this.lastPow = number > 1 && this.lastPow ? number : false;
+    
+    if (this.lastPow) {
+      for (let i = 1; i < number; i++) {
+        this.v += '*' + this.lastNum;
+        new_last_num += '*' + this.lastNum;
+      }
+    }
+
+    this.lastNum = new_last_num;
+    
+    return this;
+  }
+}
+              </code>
+            </pre>
         </li>
       </ul>
     </div>

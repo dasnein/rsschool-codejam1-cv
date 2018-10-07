@@ -149,14 +149,19 @@
     li {
       width: 100%;
       display: flex;
-      // align-items: flex-start;
-      align-items: center;
+      align-items: flex-start;
+      // align-items: center;
       justify-content: space-between;
       margin-top: 20px;
       
       &:nth-of-type(2n+1) {
         pre {
           order: 2;
+        }
+
+        p {
+          order: 1;
+          text-align-last: left;
         }
       }
 
@@ -166,12 +171,14 @@
       }
 
       p {
-        width: 50%;
+        width: 45%;
         color: #ffffff;
         font-family: Abel;
         font-size: 20px;
         font-weight: 400;
         line-height: 1.4em;
+        order: 2;
+        text-align: right;
       }
     }
   }

@@ -308,9 +308,9 @@ form button.load {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -319,17 +319,26 @@ form button.load {
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
               order: 2; }
+    .b-4 .examples li:nth-of-type(2n+1) p {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      text-align-last: left; }
     .b-4 .examples li pre {
       width: 50%;
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1; }
     .b-4 .examples li p {
-      width: 50%;
+      width: 45%;
       color: #ffffff;
       font-family: Abel;
       font-size: 20px;
       font-weight: 400;
-      line-height: 1.4em; }
+      line-height: 1.4em;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      text-align: right; }
 
 /*# sourceMappingURL=style.css.map */
