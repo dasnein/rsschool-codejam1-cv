@@ -19,7 +19,7 @@
 
   h1 {
     color: #ffdb00;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 154px;
     font-weight: 400;
     line-height: 1em;
@@ -27,7 +27,7 @@
 
   p {
     color: #fff;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.8em;
@@ -59,7 +59,7 @@
 
   p {
     color: #181a1f;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4em;
@@ -72,7 +72,7 @@
   h2 {
     text-align: center;
     color: #000000;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 44px;
     font-weight: 400;
   }
@@ -109,7 +109,7 @@
 
       span + span {
         color: #ffdb00;
-        font-family: Abel;
+        font-family: 'Abel', sans-serif;
         font-size: 32px;
         font-weight: 400;
       }
@@ -128,7 +128,7 @@
   h2 {
     text-align: center;
     color: #ffffff;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 44px;
     font-weight: 400;
     line-height: 1.4em;
@@ -137,7 +137,7 @@
   h4 {
     text-align: center;
     color: #cccccc;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 1.4em;
@@ -173,7 +173,7 @@
       p {
         width: 45%;
         color: #ffffff;
-        font-family: Abel;
+        font-family: 'Abel', sans-serif;
         font-size: 20px;
         font-weight: 400;
         line-height: 1.4em;
@@ -194,7 +194,7 @@
   h2 {
     text-align: center;
     color: #000000;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 44px;
     font-weight: 400;
   }
@@ -265,6 +265,59 @@
           &:after {
             opacity: 1;
           }
+        }
+      }
+    }
+  }
+}
+
+.b-6 {
+  background-color: #ffda00;
+  margin-top: 40px;
+
+  h2 {
+    text-align: center;
+    font-color: #17191e;
+    font-family: 'Abel', sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+  }
+  
+  .container {
+    padding: 40px $padding;
+  }
+
+  .contacts {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    li {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .icon {
+        width: 70px;
+        height: 70px;
+        background-color: #17191e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+      }
+
+      a {
+        color: #181a1f;
+        font-family: 'Abel', sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+
+        &:hover {
+          text-decoration: underline;
         }
       }
     }

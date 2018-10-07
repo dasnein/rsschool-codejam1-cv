@@ -177,13 +177,13 @@ form button.load {
   min-height: 100vh; }
   .b-1 h1 {
     color: #ffdb00;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 154px;
     font-weight: 400;
     line-height: 1em; }
   .b-1 p {
     color: #fff;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.8em;
@@ -230,7 +230,7 @@ form button.load {
     margin-left: 40px; }
   .b-2 p {
     color: #181a1f;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4em; }
@@ -240,7 +240,7 @@ form button.load {
   .b-3 h2 {
     text-align: center;
     color: #000000;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 44px;
     font-weight: 400; }
   .b-3 .skills {
@@ -279,7 +279,7 @@ form button.load {
           max-height: 75%; }
       .b-3 .skills li span + span {
         color: #ffdb00;
-        font-family: Abel;
+        font-family: 'Abel', sans-serif;
         font-size: 32px;
         font-weight: 400; }
 
@@ -291,14 +291,14 @@ form button.load {
   .b-4 h2 {
     text-align: center;
     color: #ffffff;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 44px;
     font-weight: 400;
     line-height: 1.4em; }
   .b-4 h4 {
     text-align: center;
     color: #cccccc;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 1.4em;
@@ -332,7 +332,7 @@ form button.load {
     .b-4 .examples li p {
       width: 45%;
       color: #ffffff;
-      font-family: Abel;
+      font-family: 'Abel', sans-serif;
       font-size: 20px;
       font-weight: 400;
       line-height: 1.4em;
@@ -348,7 +348,7 @@ form button.load {
   .b-5 h2 {
     text-align: center;
     color: #000000;
-    font-family: Abel;
+    font-family: 'Abel', sans-serif;
     font-size: 44px;
     font-weight: 400; }
   .b-5 .portfolio {
@@ -409,5 +409,61 @@ form button.load {
         background-size: 120% auto; }
         .b-5 .portfolio li:hover a:before, .b-5 .portfolio li:hover a:after {
           opacity: 1; }
+
+.b-6 {
+  background-color: #ffda00;
+  margin-top: 40px; }
+  .b-6 h2 {
+    text-align: center;
+    font-color: #17191e;
+    font-family: 'Abel', sans-serif;
+    font-size: 44px;
+    font-weight: 400; }
+  .b-6 .container {
+    padding: 40px 15px; }
+  .b-6 .contacts {
+    width: 100%;
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .b-6 .contacts li {
+      width: 30%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+      .b-6 .contacts li .icon {
+        width: 70px;
+        height: 70px;
+        background-color: #17191e;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-right: 20px; }
+      .b-6 .contacts li a {
+        color: #181a1f;
+        font-family: 'Abel', sans-serif;
+        font-size: 17px;
+        font-weight: 400; }
+        .b-6 .contacts li a:hover {
+          text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */
