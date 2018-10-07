@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
 
 </head>
 <body>
@@ -61,10 +62,71 @@
     </div>
   </div>
 
+  <div class="b-4">
+    <div class="container">
+      <h2>Code examples</h2>
+      <h4>JavaScript</h4>
+      <ul class="examples">
+        <li>
+          <p>
+            Your task is to implement getZerosCount function, which takes any integer number number (1 <= number <=10^8) as
+              only argument. You should calculate how many zeros in the end of result number, which is factorial of number </p>
+              <pre><code class="language-js">
+                    function getZerosCount(number) {
+                      let result = 0,
+                      n = 5,
+                      m = n;
+                      
+                      while (true) {
+                        let x = Math.floor(number / m);
+                        
+                        if (x == 0) {
+                          return result;
+                        } else {
+                          result += x;
+                          m *= n;
+                        }
+                        
+                      }
+                    }
+                  </code></pre>
+        </li>
+        <li>
+          <p>
+            Your task is to implement getZerosCount function, which takes any integer number number (1 <= number <=10^8) as
+              only argument. You should calculate how many zeros in the end of result number, which is factorial of number </p>
+              <pre>
+                <code class="language-js">
+                    function getZerosCount(number) {
+                      let result = 0,
+                      n = 5,
+                      m = n;
+                      
+                      while (true) {
+                        let x = Math.floor(number / m);
+                        
+                        if (x == 0) {
+                          return result;
+                        } else {
+                          result += x;
+                          m *= n;
+                        }
+                        
+                      }
+                    }
+                  </code>
+                </pre>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 	<script src="js/jquery.min.js" defer></script>
 	<script src="js/fancybox/jquery.fancybox.min.js" defer></script>
 	
-	<script src="js/main.js" defer></script>
+  <script src="js/main.js" defer></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js" defer></script>
 	
 	
 	<div class="hidden">
