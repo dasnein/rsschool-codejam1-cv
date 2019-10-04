@@ -1,0 +1,75 @@
+/*
+html {
+	overflow-y: scroll !important;
+	overflow-x: auto !important;
+}
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+$container: 1024px;
+$padding: 15px;
+
+body > div {
+	width: 100%;
+	min-width: $container;
+}
+
+.container {
+	width: $container;
+	height: auto;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin: 0px auto;
+	position: relative;
+	padding: 0px $padding;
+}
+
+.hidden {
+	display: none;
+}
+
+// .input_error {
+// 	border: 2px solid red !important;
+// }
+
+@mixin anim($duration:0.2s, $property:all) {
+	-webkit-transition: $property linear $duration;
+	-moz-transition: $property linear $duration;
+	-o-transition: $property linear $duration;
+	transition: $property linear $duration;
+}
+
+@mixin ease($duration:1s, $property:all) {
+	-webkit-transition: $property ease $duration;
+	-moz-transition: $property ease $duration;
+	-o-transition: $property ease $duration;
+	transition: $property ease $duration;
+}
+
+@mixin btn($width, $height, $f_size:18) {
+  display: block;
+  float: none;
+	padding: 1.5em 0;
+	margin: 0 auto;
+	width: $width * 1px;
+	// height: $height * 1px;
+	// line-height: $height * 1px;
+	border-radius: 45px;
+	text-align: center;
+	font-size: $f_size * 1px;
+	font-weight: 400;
+	font-family: 'Abel', sans-serif;
+  color: #fff;
+  border: 2px solid #ffdb00;
+  @include anim();
+	
+	&:hover {
+		cursor: pointer;
+    text-decoration: none;
+    background: #ffdb00;
+    color: #000000;
+	}
+}

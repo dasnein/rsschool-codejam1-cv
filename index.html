@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="img/favicon.png">
+	<title>Aleh M</title>
+  
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
+
+</head>
+<body>
+
+  <div class="b-1">
+    <div class="container">
+      <h1>
+        I LOVE WHAT I DO
+      </h1>
+      <p>
+        Hi, my name is Aleh Maskaliou. I'm a junior front-end developer, with little webdev experience. At this website you'll find information about me and my professional skills.
+      </p>
+      <a href=".b-2" class="parallax">LET'S SEE!</a>
+    </div>
+  </div>
+
+  <div class="b-2">
+    <div class="container">
+      <p>
+        A few details about myself:<br>
+        In 2009 I graduated from school.<br>
+        Then I entered the Belarusian State University of Transport at the Faculty of Transportation Process Management, which I graduated in 2014.<br>
+        About a year before I became interested in web development. Self-learning the basics, I began working as freelancer.<br>
+        Currently, my goal is to finish the rolling scopes course.
+      </p>
+      <img src="img/b-2__photo.jpg" class="photo" alt="Aleh M" width="200" height="300">      
+    </div>
+  </div>
+
+  <div class="b-3">
+    <div class="container">
+      <h2>My skills</h2>
+      <ul class="skills">
+        <!-- (li>(span.icon>img[src=img/b-3__icon-$.png]+span))* -->
+        <li><span class="icon"><img src="img/b-3__html5.png" alt=""></span><span>HTML5</span></li>
+        <li><span class="icon"><img src="img/b-3__css3.png" alt=""></span><span>CSS3</span></li>
+        <li><span class="icon"><img src="img/b-3__javascript.svg" alt=""></span><span>JavaScript</span></li>
+        <li><span class="icon"><img src="img/b-3__jquery.gif" alt=""></span><span>JQuery</span></li>
+        <li><span class="icon"><img src="img/b-3__php.png" alt=""></span><span>PHP</span></li>
+        <li><span class="icon"><img src="img/b-3__mysql.png" alt=""></span><span>MySQL</span></li>
+        <li><span class="icon"><img src="img/b-3__gulp.png" alt=""></span><span>Gulp</span></li>
+        <li><span class="icon"><img src="img/b-3__sass.png" alt=""></span><span>SASS</span></li>
+        <li><span class="icon"><img src="img/b-3__wordpress.png" alt=""></span><span>WordPress</span></li>
+        <li><span class="icon"><img src="img/b-3__gulp.png" alt=""></span><span>Gulp</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="b-4">
+    <div class="container">
+      <h2>Code examples</h2>
+      <h4>JavaScript</h4>
+      <ul class="examples">
+        <li>
+          <p>
+            Your task is to implement getZerosCount function, which takes any integer number number (1 <= number <=10^8) as only argument. You should calculate how many zeros in the end of result number, which is factorial of number 
+          </p>
+          <pre>
+            <code class="language-js">
+function getZerosCount(number) {
+  let result = 0,
+  n = 5,
+  m = n;
+  
+  while (true) {
+    let x = Math.floor(number / m);
+    
+    if (x == 0) {
+      return result;
+    } else {
+      result += x;
+      m *= n;
+    }
+    
+  }
+}
+              </code>
+            </pre>
+        </li>
+        <li>
+          <p>
+            Your task is to implement class SmartCalculator. All methods in class should be chainable. The priority of different operations should be kept in mind. It means, that 2 + 2 * 2 is 6, not 8.
+          </p>
+          <pre>
+            <code class="language-js">
+class SmartCalculator {
+  constructor(initialValue) {
+    this.v = initialValue;
+    this.lastNum = initialValue;
+    this.lastPow = 1;
+  }
+
+  toString() {    
+    return eval(this.v);
+  }
+
+  add(number) {
+    this.v += '+' + number;
+    this.lastNum = number;
+    this.lastPow = 1;
+    return this;
+  }
+  
+  subtract(number) {
+    this.v += '-' + number;
+    this.lastNum = number;
+    this.lastPow = 1;
+    return this;
+  }
+
+  multiply(number) {
+    this.v += '*' + number;
+    this.lastNum = number;
+    this.lastPow = 1;
+    return this;
+  }
+
+  devide(number) {
+    this.v += '/' + number;
+    this.lastNum = number;
+    this.lastPow = 1;
+    return this;
+  }
+
+  pow(number) {
+
+    let new_last_num = this.lastNum;
+
+    this.lastPow = number > 1 && this.lastPow ? number : false;
+    
+    if (this.lastPow) {
+      for (let i = 1; i < number; i++) {
+        this.v += '*' + this.lastNum;
+        new_last_num += '*' + this.lastNum;
+      }
+    }
+
+    this.lastNum = new_last_num;
+    
+    return this;
+  }
+}
+              </code>
+            </pre>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="b-5">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <ul class="portfolio">
+        <li><a href="http://site-do.org/new_portfolio/musor/" style="background-image: url(img/b-5__item-1.png)" target="_blank"></a></li>
+        <li><a href="http://site-do.org/new_portfolio/novikov/" style="background-image: url(img/b-5__item-2.png)" target="_blank"></a></li>
+        <li><a href="http://site-do.org/new_portfolio/seogame/" style="background-image: url(img/b-5__item-3.png)" target="_blank"></a></li>
+        <li><a href="http://site-do.org/new_portfolio/supermalish/" style="background-image: url(img/b-5__item-4.png)" target="_blank"></a></li>
+        <li><a href="http://site-do.org/new_portfolio/greentone/" style="background-image: url(img/b-5__item-5.png)" target="_blank"></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="b-6">
+    <div class="container">
+      <h2>Contacts</h2>
+      <ul class="contacts">
+        <li>
+          <span class="icon"><img src="img/b-6__icon-tel.png" alt=""></span>
+          <a href="tel:+375296582234">+ 375 (29) 658-22-34</a>
+        </li>
+        <li>
+          <span class="icon"><img src="img/b-6__icon-email.png" alt=""></span>
+          <a href="mailto:sank.mail@gmail.com">sank.mail@gmail.com</a>
+        </li>
+        <li>
+          <span class="icon"><img src="img/b-6__icon-website.png" alt=""></span>
+          <a href="http://site-do.org" target="_blank">http://site-do.org</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+	<script src="js/jquery.min.js" defer></script>
+	<script src="js/fancybox/jquery.fancybox.min.js" defer></script>
+	
+  <script src="js/main.js" defer></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js" defer></script>
+	
+	
+	<div class="hidden">
+		<form action="#">
+			<input type="text" name="name" placeholder="Введите ваше имя">
+			<input type="tel" name="tel" required placeholder="Введите ваш телефон" pattern="[^a-zA-Zа-яА-Я]{3,}" title="Введите свой номер телефона!">
+			<input type="email" name="email" placeholder="Введите электронную почту">
+			<input type="text" name="form" value="Обратный звонок" class="hidden">
+			<div class="clearfix"></div>
+			<button type="submit"><span>Оставить заявку на сайте</span></button>
+		</form>
+	</div>
+
+
+</body>
+</html>
